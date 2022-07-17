@@ -157,7 +157,7 @@ def predict():
 def result():
     output=request.args.get('output',None)
     return render_template('result.html',output=output)
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 
