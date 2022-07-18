@@ -7,17 +7,17 @@ body{
 .header{
   margin: 0%;
   padding: 0px;
-  height: 60px;
-  color: rgb(211, 243, 249);
+  height: 10%;
+  color: rgb(179, 211, 216);
 }
 .nav{
-  height: 60px;
+  height: 100%;
 }
 .main1{
-  margin-top: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
-  background-color: rgb(111, 232, 239);
+  margin-top: 2px;
+  margin-left:15%;
+  margin-right: 15%;
+  background-color: rgb(158, 239, 242);
   border: 6px;
 }
 .background{
@@ -34,7 +34,7 @@ body{
   }
   .form1{
     padding-top: 20px;
-    padding-left: 250px;
+    padding-left: 35%;
     
   }
 
@@ -87,4 +87,11 @@ margin-left: 25%;
   font-size: x-large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
+}
+#input_text{
+ 
+}
+#heading_main{
+  margin: 2%;
+  color: rgb(19, 134, 243);
 }
