@@ -15,10 +15,16 @@
 
         <div class="body">
             <div class="header">
-                <nav class="nav badge-dark">
-                    <a class="nav-link active" href="{{ url_for('templates', 'home.html') }}">Home</a>
-                    <a class="nav-link active" href="../templates/about.html">About</a>
+                <nav class="navbar navbar-light bg-primary">
+                    <div class="container-fluid bg-primary">
+                        <a class="navbar-brand" href="{{ url_for('home') }}">HOME</a>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </nav>
+
             </div>
         </div>
         <p class="about">
