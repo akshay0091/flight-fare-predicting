@@ -2,28 +2,41 @@ body{
   padding: 0px;
   margin: 0px;
   scroll-behavior: smooth;
+ 
 }
 .header{
   margin: 0%;
   padding: 0px;
-  height: 20px;
+  height: 60px;
+  color: rgb(211, 243, 249);
 }
 .nav{
-  height: 40px;
+  height: 60px;
+}
+.main1{
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgb(111, 232, 239);
+  border: 6px;
 }
 .background{
 
-    background-image: url('../image/l-filipe-c-sousa-0nUcd4-pp5k-unsplash.jpg');
+    background-image: url('../image/airport.webp');
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 610px;
+    height: 910px;
     margin-left: auto;
     margin-right: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 70px;
   }
-
+  .form1{
+    padding-top: 20px;
+    padding-left: 250px;
+    
+  }
 
 img{
   background: fixed;
@@ -49,8 +62,29 @@ img{
   font-size: x-large;
 }
 .submit{
-margin-left: 45%;
+margin-left: 25%;
 }
 .background_result{
   margin: 52px;
+}
+.resut{
+  margin-left: 400px;
+  height: 150px;
+  width: 300px;
+  background-color: aliceblue;
+}
+#heading_out{
+  color: rgb(5, 6, 6);
+  padding-left: 90px;
+  padding-top: 10px;
+  
+}
+#para{
+  color: rgb(63, 31, 204);
+  height: 30px;
+  padding-left: 60px;
+  padding-top: 10px;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
 }

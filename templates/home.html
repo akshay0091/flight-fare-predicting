@@ -19,165 +19,141 @@
 
         <div class="body">
             <div class="header">
-                <nav class="nav badge-dark">
-                    <a class="nav-link active" href="{{ url_for('home') }}">HOME</a>
-                </nav>
-            </div>
-            <form action="\" method="post">
-                <div class="background">
-                    <div class="input">
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Airline</h5>
-
-                                <label for="Airline"><b> </b></label>
-                                <select name="airline" id="airline" required="required">
-                                    <option value="3">IndiGo</option>
-                                    <option value="1"> Air India</option>
-                                    <option value="4">SpiceJet</option>
-                                    <option value="5">Vistara</option>
-                                    <option value="0">Air Asia</option>
-                                    <option value="2">GO_FIRST</option>
-
-                                </select>
-                                
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Departure time</h5>
-
-                                <label for="Departure time"><b> </b></label>
-                                <select name="Departure time" id="Departure time">
-                                    <option value="2">Evening</option>
-                                    <option value="1">Early_Morning</option>
-                                    <option value="4">Morning</option>
-                                    <option value="0">Afternoon</option>
-                                    <option value="5">Night</option>
-                                    <option value="3">Late_Night</option>
-
-                                </select><br>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Source_city</h5>
-
-                                <label for="source_city"><b> </b></label>
-                                <select name="source_city" id="source_city" required="required">
-                                    <option value="2">Delhi</option>
-                                    <option value="5">Mumbai</option>
-                                    <option value="0">Bangalore</option>
-                                    <option value="4">Kolkata</option>
-                                    <option value="3">Hyderabad</option>
-                                    <option value="1">Chennai</option>
-
-                                </select>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Destination_city</h5>
-
-                                <label for="destination_city"><b> </b></label>
-                                <select name="destination_city" id="destination_city" required="required">
-                                    <option value="5">Mumbai</option>
-                                    <option value="0">Bangalore</option>
-                                    <option value="4">Kolkata</option>
-                                    <option value="3">Hyderabad</option>
-                                    <option value="1">Chennai</option>
-                                    <option value="2">Delhi</option>
-
-                                </select>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Stops</h5>
-
-                                <label for="stops"><b> </b></label>
-                                <select name="stops" id="'stops" required="required">
-                                    <option value="0">zero</option>
-                                    <option value="1">one</option>
-                                    <option value="2">two_or_more</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Arrival_time</h5>
-
-                                <label for="arrival_time"><b> </b></label>
-                                <select name="arrival_time" id="arrival_time">
-                                    <option value="2">Evening</option>
-                                    <option value="1">Early_Morning</option>
-                                    <option value="4">Morning</option>
-                                    <option value="0">Afternoon</option>
-                                    <option value="2">Evening</option>
-                                    <option value="5">Night</option>
-                                    <option value="3">Late_Night</option>
-                                </select><br>
-                            </div>
-                        </div>
-
-                        <div class="card" style="width: 18rem;display: inline-block;">
-                            <div class="card-body">
-                                <h5 class="card-title">Class</h5>
-
-                                <label for="Class"><b> </b></label>
-                                <select name="Class" id="Class">
-                                    <option value="1">Economy</option>
-                                    <option value="0">Business</option>
-                                </select><br>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Days_left</h5>
-
-                                <label for="days_left"><b> </b></label>
-                                <input type="text" name="days_left" class="days_left" value="0" id="days_left">
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Du_hour</h5>
-
-                                <label for="Du_hour"><b> </b></label>
-
-                                <input type="text" name="Du_hour" class="Du_hour" value="0" id="Du_hour">
-
-
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;display: inline-block">
-                            <div class="card-body">
-                                <h5 class="card-title">Du_min</h5>
-
-                                <label for="Du_min"><b> </b></label>
-
-                                <input type="text" name="Du_min" class="Du_min" value="0" id="Du_min">
-
-
-                            </div>
-                        </div>
-
+                <nav class="navbar navbar-light bg-primary">
+                    <div class="container-fluid bg-primary">
+                        <a class="navbar-brand" href="{{ url_for('home') }}">HOME</a>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
+                </nav>
 
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Submit" class="btn btn-secondary">
-                </div>
+            </div>
+            <div class="background">
+                <form action="\" method="post">
 
-
-            </form>
-               <br>
-        <br>
+                    <div class="main1">
 
 
+                        <div class="form1">
+                            <h1 id="heading">Check price</h1>
+                            <div class="mb-3 row">
+                                <label for="Airline" class="col-sm-2 col-form-label">Airline</label>
+                                <div class="col-sm-10">
+                                    <select name="airline" id="airline" required="required" class="form-select">
+                                        <option value="3">IndiGo</option>
+                                        <option value="1"> Air India</option>
+                                        <option value="4">SpiceJet</option>
+                                        <option value="5">Vistara</option>
+                                        <option value="0">Air Asia</option>
+                                        <option value="2">GO_FIRST</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="Departure time" class="col-sm-2 col-form-label">Departure time</label>
+                                <div class="col-sm-10">
+                                    <select name="Departure time" id="Departure time">
+                                        <option value="2">Evening</option>
+                                        <option value="1">Early_Morning</option>
+                                        <option value="4">Morning</option>
+                                        <option value="0">Afternoon</option>
+                                        <option value="5">Night</option>
+                                        <option value="3">Late_Night</option>
 
-        <br>
-        <br>
+                                    </select><br>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="source_city" class="col-sm-2 col-form-label">Source city</label>
+                                <div class="col-sm-10">
+                                    <select name="source_city" id="source_city" required="required">
+                                        <option value="2">Delhi</option>
+                                        <option value="5">Mumbai</option>
+                                        <option value="0">Bangalore</option>
+                                        <option value="4">Kolkata</option>
+                                        <option value="3">Hyderabad</option>
+                                        <option value="1">Chennai</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="destination_city" class="col-sm-2 col-form-label">Source city</label>
+                                <div class="col-sm-10">
+                                    <select name="destination_city" id="destination_city" required="required">
+                                        <option value="5">Mumbai</option>
+                                        <option value="0">Bangalore</option>
+                                        <option value="4">Kolkata</option>
+                                        <option value="3">Hyderabad</option>
+                                        <option value="1">Chennai</option>
+                                        <option value="2">Delhi</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="stops" class="col-sm-2 col-form-label">Stops</label>
+                                <div class="col-sm-10">
+                                    <select name="stops" id="'stops" required="required">
+                                        <option value="0">zero</option>
+                                        <option value="1">one</option>
+                                        <option value="2">two_or_more</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="arrival_time" class="col-sm-2 col-form-label">Arrival_time</label>
+                                <div class="col-sm-10">
+                                    <select name="arrival_time" id="arrival_time">
+                                        <option value="2">Evening</option>
+                                        <option value="1">Early_Morning</option>
+                                        <option value="4">Morning</option>
+                                        <option value="0">Afternoon</option>
+                                        <option value="2">Evening</option>
+                                        <option value="5">Night</option>
+                                        <option value="3">Late_Night</option>
+                                    </select><br>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="Class" class="col-sm-2 col-form-label">Class</label>
+                                <div class="col-sm-10">
+                                    <select name="Class" id="Class">
+                                        <option value="1">Economy</option>
+                                        <option value="0">Business</option>
+                                    </select><br>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="days_left" class="col-sm-2 col-form-label">Days left</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="days_left" class="days_left" value="0" id="days_left">
+
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="Du_hour" class="col-sm-2 col-form-label">Du hour</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="Du_hour" class="Du_hour" value="0" id="Du_hour">
+
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="Du_min" class="col-sm-2 col-form-label">Du_min</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="Du_min" class="Du_min" value="0" id="Du_min">
+
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit" class="btn btn-success ">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
         </div>
 
